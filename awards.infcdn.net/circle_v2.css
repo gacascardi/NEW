@@ -1,0 +1,230 @@
+@font-face {
+    font-family: "Akrobat Black";
+    src: url(fonts/Akrobat-Black.otf);
+}
+
+@font-face {
+    font-family: "Akrobat Bold";
+    src: url(fonts/Akrobat-Bold.otf);
+}
+
+@font-face {
+    font-family: "Akrobat Regular";
+    src: url(fonts/Akrobat-Regular.otf);
+}
+
+#circle_v2 a {
+    text-decoration: none !important;
+}
+
+#circle_v2 {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    max-width: 174px;
+    min-width: 174px;
+    height: 135px;
+    font: 400 10px/normal 'Akrobat Bold', 'Helvetica Neue', 'Arial', sans-serif;
+    align-items: center;
+    text-align: center;
+    color: #000 !important;
+    text-shadow: none;
+    background: url("img/bg.svg") no-repeat;
+    box-sizing: border-box;
+}
+
+#circle_v2 .arc-heading__heading * {font-family: 'Akrobat Bold', 'Helvetica Neue', 'Arial', sans-serif;}
+
+#circle_v2.arc-top_nostars {background-image: url("img/bg_no_stars.svg");}
+
+#circle_v2 a, #circle_v2 a.sq_bot, #circle_v2 a.sq_center {
+    text-decoration: none;
+    border-bottom: none;
+    box-shadow: none;
+}
+
+
+#circle_v2 a.sq_bot, #circle_v2 a {
+    padding: 0;
+    margin: 0;
+}
+
+#circle_v2 p:empty {display: none;}
+
+#circle_v2 p {
+    margin: 0;
+    padding: 0;
+}
+
+#circle_v2 .sq_year + p {
+    position: static;
+}
+
+#circle_v2 br {display: none;}
+
+#circle_v2 .sq_year, #circle_v2 .arc-heading:first-child + .center {
+    color: #000;
+    width: 140px;
+    font: 22px/normal 'Akrobat Black', 'Helvetica Neue', 'Arial', sans-serif !important;
+    font-style: italic !important;
+    transform: rotate(-12deg);
+    position: absolute;
+    top: 41px !important;
+    left: 12px !important;
+    letter-spacing: 0.6px;
+    text-align: center !important;
+    padding: 0;
+}
+
+#circle_v2 a.sq_center {
+    text-transform: uppercase;
+    color: #fff !important;
+    width: 140px;
+    font: 16px/normal 'Akrobat Bold', 'Helvetica Neue', 'Arial', sans-serif !important;
+    font-style: italic !important;
+    transform: rotate(-12deg);
+    position: absolute;
+    z-index: 5;
+    top: 72px;
+    left: 12px;
+    letter-spacing: 0.4px !important;
+    text-align: center !important;
+    white-space: normal;
+    padding-left: 0 !important;
+    border: none;
+}
+
+#circle_v2 .arc-heading {
+    transform: rotate(-11deg);
+    position: absolute;
+    z-index: 4;
+    top: -7px;
+    left: 6px;
+    letter-spacing: 0.2px;
+    padding: 0;
+}
+
+#circle_v2 .arc-heading:first-child svg {
+    width: 160px;
+    height: 160px;
+    margin-top: 0;
+}
+
+#circle_v2 .arc-heading textPath {
+    alignment-baseline: auto;
+    font-family: 'Akrobat Bold', 'Helvetica Neue', 'Arial', sans-serif !important;
+}
+
+#circle_v2 .arc-heading.arc-heading.arc-heading__bottom, #circle_v2 .arc-heading.arc-heading.arc-headingbottom {
+    top: auto;
+    bottom: -14px;
+    left: 26px;
+    letter-spacing: 0.3px;
+    transform: rotate(-13deg);
+    height: 100% !important;
+    max-width: 100%;
+    padding: 0;
+}
+
+#bottom-footer #circle_v2 .arc-heading__bottom a {letter-spacing: 0.3px;}
+
+#circle_v2 .arc-headingbottom svg {
+    width: 120px;
+    height: 120px;
+}
+
+#circle_v2 .arc-heading.arc-heading.arc-heading__bottom {position: absolute !important;}
+
+#circle_v2 .arc-heading .arc-heading__heading, #circle_v2 .arc-heading .arc-heading_heading, #circle_v2 .arc-heading .arc-headingheading  {
+    font: 16px/1 'Akrobat Bold', 'Helvetica Neue', 'Arial', sans-serif !important;
+    text-transform: uppercase !important;
+}
+
+#circle_v2 .arc-heading .arc-heading__heading.f14, #circle_v2 .arc-heading.arc-two_str .arc-heading__heading.f14,
+#circle_v2 .arc-heading.arc-two_str2 .arc-heading__heading.f14, #circle_v2 .arc-heading .arc-heading_heading.f14 {font-size: 14px !important;}
+#circle_v2 .arc-heading .arc-heading__heading.f12, #circle_v2 .arc-heading.arc-two_str .arc-heading__heading.f12,
+#circle_v2 .arc-heading.arc-two_str2 .arc-heading__heading.f12, #circle_v2 .arc-heading .arc-heading_heading.f12 {font-size: 12px !important;}
+#circle_v2 .arc-heading .arc-heading__heading.f9, #circle_v2 .arc-heading.arc-two_str .arc-heading__heading.f9,
+#circle_v2 .arc-heading.arc-two_str2 .arc-heading__heading.f9, #circle_v2 .arc-heading .arc-heading_heading.f9 {font-size: 9px !important;}
+
+#circle_v2 .arc-heading .arc-heading__subheading, #circle_v2 .arc-heading .arc-heading__subheading a,
+#circle_v2 .arc-heading .arc-heading_subheading, #circle_v2 .arc-heading .arc-heading_subheading a{
+    font: 12px/1 'Akrobat Regular', 'Helvetica Neue', 'Arial', sans-serif !important;
+    text-transform: uppercase;
+    letter-spacing: normal;
+}
+
+#circle_v2 a.sq_center.f14 {
+    font-size: 14px !important;
+    top: 72px;
+    left: 16px;
+}
+
+#circle_v2 a.sq_center.f11 {
+    font-size: 11px !important;
+    top: 67px;
+    left: 16px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#circle_v2 a.sq_center.f11:after {display: none;}
+
+#circle_v2 a.sq_center.f10 {
+    font-size: 10px !important;
+    top: 70px;
+    left: 16px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#circle_v2 a.sq_center.f9 {
+    font-size: 9px !important;
+    top: 68px;
+    left: 16px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#circle_v2 a.sq_center.f8 {
+    font-size: 8px !important;
+    line-height: 1 !important;
+    top: 71px;
+    left: 16px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#circle_v2 .arc-heading.arc-two_str {
+    top: -16px;
+    left: 3px;
+    transform: rotate(-13deg);
+}
+
+#circle_v2 .arc-heading.arc-two_str2 {
+    transform: rotate(-13deg);
+    top: -2px;
+    left: 7px;
+    width: auto !important;
+}
+
+#circle_v2 .arc-heading.arc-two_str .arc-heading__heading, #circle_v2 .arc-heading.arc-two_str2 .arc-heading__heading {font-size: 11px !important;}
+
+#circle_v2 .arc-heading__bottom svg {
+    width: 120px;
+    height: 120px;
+    margin-top: 0;
+}
+
+.arc-heading__bottom svg + span {display: none;}

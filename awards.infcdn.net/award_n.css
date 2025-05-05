@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&amp;display=swap');
+
+#rest_aw {
+    letter-spacing: 0;
+}
+
+#rest_aw {
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    font: 11px/normal 'Source Sans Pro', 'Helvetica Neue', 'Arial', sans-serif;
+    width: fit-content;
+    width: -moz-fit-content;
+    width: intrinsic;
+    height: 66px;
+}
+
+#rest_aw .aw_top {
+    text-decoration: none;
+    position: absolute;
+    left: 33px;
+    bottom: 54px;
+    z-index: 2;
+    color: #001;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Arial', sans-serif;
+    border-bottom: none;
+    font-weight: bolder;
+    line-height: 1em;
+    max-width: 150px;
+}
+
+#rest_aw img {
+    display: block;
+}
+
+#rest_aw .aw_bot {
+    text-decoration: none;
+    position: absolute;
+    left: 6px;
+    bottom: -1px;
+    color: #001;
+    letter-spacing: 0.1px;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Arial', sans-serif;
+    border-bottom: none;
+    font-weight: bolder;
+}
