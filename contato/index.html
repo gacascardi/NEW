@@ -23,7 +23,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 		<meta name="google-site-verification" content="SVhfWlcoGnFIByyKb4LL-W6R9Agibx52pw1Oa3w-YqQ" />
-
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="wp-content/themes/mainha/js/main0899.js"></script>
 		<!-- Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129890261-1"></script>
 		<script>
@@ -56,9 +57,8 @@
 :root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
 </style>
 <link rel='stylesheet' id= 'marlene-style-css' href='../wp-content/themes/mainha/style0899.css?ver=6.8.1' type='text/css' media='' />
-<script type="text/javascript" src="../wp-content/themes/mainha/js/libs/modernizr.custom.456555f77.js?ver=45655" id="modernizr-js"></script>
+<script type="text/javascript" src="../wp-conntent/themes/mainha/js/libs/modernizr.custom.456555f77.js?ver=45655" id="modernizr-js"></script>
 <link rel="canonical" href="index.html" />
-<link rel='shortlink' href='../index5831.html?p=19' />
 <meta name="generator" content="Site Kit by Google 1.122.0" />
 <!-- Google Tag Manager for WordPress by gtm4wp.com -->
 <!-- GTM Container placement set to off -->
@@ -74,11 +74,12 @@
 <link rel="icon" href="../wp-content/uploads/2021/07/cropped-favicon-192x192.png" sizes="192x192" />
 <link rel="apple-touch-icon" href="../wp-content/uploads/2021/07/cropped-favicon-180x180.png" />
 		<style type="text/css" id="wp-custom-css">
-			.orcamento 
-{
-	visibility: hidden;
-}
+			
 		</style>
+		<script>
+			
+	</script>
+		
 				<!-- Final Wordpress Header -->
 	</head>
 	<body data-rsssl=1>
@@ -137,23 +138,18 @@
 			</div>
 			<div class="container">
 				<p class="animar3">Queremos lhe assegurar que as informações que você nos fornecer não serão, jamais e em hipótese alguma, divulgadas publicamente, pode ficar tranquilo(a).</p>
-				<form action="/wp-content/themes/mainha/enviarc.php" method="post" name="form" class="animar4 formphp2">
+				<form action="#" method="get" onsubmit="abrirWhatsapp(); return false;">
 					<div>
-						<input type="text" name="nome" placeholder="Nome" required>
-						<input type="text" name="email" placeholder="Email" required>	
+						<input type="text" id="nome" name="nome" placeholder="Nome" required>
+						<input type="email" id="email" name="email" placeholder="Email" required>	
 					</div>
 					<div>
-						<input type="text" name="telefone" placeholder="Telefone ou Whatsapp" required>	
-						<input type="text" name="cidade" placeholder="Cidade" required>
-					</div>
-				
-					<label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
-					<input type="text" class="nao-aparece" name="leaveblank">
-					<label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
-					<input type="text" class="nao-aparece" name="dontchange" value="http://" >
+						<input type="text" id="telefone" name="telefone" placeholder="Telefone ou Whatsapp" required>	
+						<input type="text" id="bairro" name="bairro" placeholder="Bairro" required>
+					</div>				
+					<textarea id="mensagem" name="mensagem" placeholder="Mensagem" rows="5" required></textarea><br />
+  				<button type="submit">Enviar dados p/ Whatsapp</button>
 
-					<textarea name="mensagem" placeholder="Escreva a sua mensagem" required></textarea>
-					<button type="submit" value="Enviar">Enviar</button>					
 				</form>
 				<div class="dados">
 					<div>
@@ -175,7 +171,7 @@ Centro<br />
 
 
 		<div class="mapa">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.667867230831!2d-39.07712188452045!3d-16.441686143589163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x73694608f110b03%3A0x1474bf9676c90f99!2sConfet+Doceria!5e0!3m2!1spt-BR!2sbr!4v1542295124654" width="1180" height="450" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14612.317268487604!2d-46.42299781466578!3d-23.708861412365454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce6cedf26dc331%3A0xc43c9c12ad702c0b!2sCentro%2C%20Ribeir%C3%A3o%20Pires%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1746436015760!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
 
 		<div class="separador separador1">
@@ -184,26 +180,26 @@ Centro<br />
 
 		<div class="separador2">
 			<div class="icone">
-				<img src="../wp-content/themes/mainha/img/dc/dc1.svg" alt="Dc1">
+				<img src="../wp-content/themes/mainha/img/dc/icone1.png" alt="Dc1">
 			</div>
 			<div class="icone">
-				<img src="../wp-content/themes/mainha/img/dc/dc2.svg" alt="Dc2">
+				<img src="../wp-content/themes/mainha/img/dc/icone2.png" alt="Dc2">
 			</div>
 			<div class="icone">
-				<img src="../wp-content/themes/mainha/img/dc/dc3.svg" alt="Dc3">
+				<img src="../wp-content/themes/mainha/img/dc/icone3.png" alt="Dc3">
 			</div>
 			<div class="icone">
-				<img src="../wp-content/themes/mainha/img/dc/dc4.svg" alt="Dc4" style="height:80px !important">
+				<img src="../wp-content/themes/mainha/img/dc/icone4.png" alt="Dc4">
 			</div>
 			<div class="icone">
-				<img src="../wp-content/themes/mainha/img/dc/dc5.svg" alt="Dc5" style="height:80px !important">
+				<img src="../wp-content/themes/mainha/img/dc/icone5.png" alt="Dc5">
 			</div>
 		</div>
 
 		<section class="quote">
 			<div class="bg">
-				<h2 class="subtitulo">Que seja doce</h2>
-				<p>O dia, a vida e a alma.</p>
+				<h2 class="subtitulo">O melhor do sabor pernambucano</h2>
+				<p>feito por quem ama o que faz.</p>
 			</div>
 		</section>
 
@@ -213,13 +209,11 @@ Centro<br />
 				<ul class="container">
 					<div>
 						<li><a href="../portfolio/index.html">Portfólio</a></li>
-						<li><a href="../doceriaecafe/index.html">Doceria & Café</a></li>
-						<li><a href="../cardapio-02/index.html">Cardápio</a></li>
+						<li><a href="../home/index.html">Início</a></li>
 					</div>
-					<li><a href="../home/index.html"><img src="../wp-content/themes/mainha/img/logotipo.png" alt="Logotipo" height="116"></a></li>
+					<li><a href="../home/index.html"><img src="../wp-content/themes/mainha/img/logotipo.png" alt="Logotipo" height="220"></a></li>
 					<div>
-						<li><a href="../blog/index.html">Blog</a></li>
-						<li><a href="../sobre/index.html">Sobre nós</a></li>
+						<li><a href="../sobre/index.html">Sobre</a></li>
 						<li><a href="index.html" class="m-atual">Contato</a></li>
 						<div class="redes-sociais">
 							<li><a href="http://fb.com/marlene.luiza.165" target="_blank"></a></li>
@@ -230,19 +224,7 @@ Centro<br />
 			</nav>
 
 			<div class="copyright">
-				<div class="container">
-					<div class="plus">
-						<a href="https://www.casamentos.com.br/doces-casamento/confet-doceria--e124411" target="_blank"><img src="../wp-content/themes/mainha/img/casamentos.svg" alt="Casamentos" style="height:18px !important"></a>
-						<a href="https://www.tripadvisor.com.br/Restaurant_Review-g303270-d10848143-Reviews-Confet_Doceria-Porto_Seguro_State_of_Bahia.html" target="_blank"><img src="../wp-content/themes/mainha/img/tripadvisor.svg" alt="Tripadvisor" style="height:16px !important"></a>
-					</div>
-					<div class="moca">
-						<img src="../wp-content/uploads/2021/07/selo_FeitocomMoca.png" alt="Feito com Moça" style="height:100px !important">
-					</div>
-					<div class="guru">
-						<link href="../awards.infcdn.net/award_n.css" rel="stylesheet"/>
-						<div id="rest_aw" onclick="if(event.target.nodeName.toLowerCase() != 'a') {window.open(this.querySelector('.aw_top').href);return 0;}"> <a href="https://pt.restaurantguru.com/Confet-Doceria-Porto-Seguro-2" title="Marlene Delícias de Milho em Restaurant Guru" target="_blank" class="aw_top">Marlene Delícias de Milho</a><div><img alt="Marlene Delícias de Milho em Restaurant Guru" src="../../pw.restaurantguru.com/b/51575024_ms12pts.png"/></div> <a href="https://restaurantguru.com/" class="aw_bot" target="_blank">Restaurant Guru 2021</a>
-						</div>
-					</div>
+					
 					<div class="info">
 						<p>Copyright © 2025 Marlene Delícias de Milho Todos os direitos reservados</p>
 					</div>
@@ -257,7 +239,7 @@ Centro<br />
 
 		<!-- Início Wordpress Footer -->
 		<script type="speculationrules">
-{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/mainha\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/mainha\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
 <script type="text/javascript" src="../wp-content/themes/mainha/js/libs/jquery-3.3.1.min3d36.js?ver=3.3.1" id="jquery-js"></script>
 <script type="text/javascript" src="../wp-content/themes/mainha/js/plugins0899.js?ver=6.8.1" id="plugins-script-js"></script>
@@ -266,7 +248,4 @@ Centro<br />
 	</body>
 
 </html>
-<!-- Dynamic page generated in 0.377 seconds. -->
-<!-- Cached page generated by WP-Super-Cache on 2025-05-02 08:07:16 -->
 
-<!-- super cache -->

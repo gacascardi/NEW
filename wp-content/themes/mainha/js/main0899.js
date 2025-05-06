@@ -1,57 +1,22 @@
 // Formulário - Contato
 
-$('.formphp2').on('submit', function() {
-	var emailContato = "contato@confetdoceria.com.br"; // Escreva aqui o seu e-mail
-
-	var that = $(this),
-			url = that.attr('action'),
-			type = that.attr('method'),
-			data = {};
-	
-	that.find('[name]').each(function(index, value) {
-		var that = $(this),
-				name = that.attr('name'),
-				value = that.val();
-				
-		data[name] = value;
-	});
-	
-	$.ajax({
-		url: url,
-		type: type,
-		data: data,
-		success: function(response) {
-		
-			if( $('[name="leaveblank"]').val().length != 0 ) {
-				$('.formphp2').html("<div id='form-erro'></div>");
-				$('#form-erro').html("<span>Falha no envio!</span><p>Você pode tentar novamente, ou enviar direto para o e-mail " + emailContato + " </p>")
-				.hide()
-				.fadeIn(1500, function() {
-				$('#form-erro');
-				});
-			} else {
-			
-				$('.formphp2').html("<div id='form-send'></div>");
-				$('#form-send').html("<span>Mensagem enviada!</span><p>Em breve eu entro em contato com você. Abraços.</p>")
-				.hide()
-				.fadeIn(1500, function() {
-				$('#form-send');
-				});
-			};
-		},
-		error: function(response) {
-			$('.formphp2').html("<div id='form-erro'></div>");
-			$('#form-erro').html("<span>Falha no envio!</span><p>Você pode tentar novamente, ou enviar direto para o e-mail " + emailContato + " </p>")
-			.hide()
-			.fadeIn(1500, function() {
-			$('#form-erro');  
-		});
-		}
-	});
-	
-	return false;
-});
-
+/*Whatsapp*/
+function abrirWhatsapp() {
+	var nome = document.getElementById("nome").value;
+	var telefone = document.getElementById("telefone").value;
+	var email = document.getElementById("email").value;
+	var msg = document.getElementById("mensagem").value; // Updated to match the input name
+	var bairro = document.getElementById("bairro").value;
+	var url = "https://wa.me/5511975581033?text=" // Seu numero
+		+ "*Formulário de Contato*" + "%0a" // Mensagem personalizada
+		+ "%0a" // Quebra de linha
+		+ "*Nome*: " + nome + "%0a" // Dados do formulário
+		+ "*Telefone*: " + telefone + "%0a"
+		+ "*Bairro*: " + bairro + "%0a"
+		+ "*E-mail*: " + email + "%0a"
+		+ "*Mensagem*: " + msg;
+	window.open(url, '_blank').focus();
+}
 /* Plugin Slide */
 
 $(".rslides").responsiveSlides({
@@ -377,7 +342,7 @@ Visibility.onVisible(function(){
 // Formulário Orçamento
 
 $('.formphp').on('submit', function() {
-	var emailContato = "contato@confetdoceria.com.br"; // Escreva aqui o seu e-mail
+	var emailContato = "gacacardi@outlook.com"; // Escreva aqui o seu e-mail
 
 	var that = $(this),
 			url = that.attr('action'),

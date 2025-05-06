@@ -158,6 +158,9 @@ a.m-atual {
 label.nao-aparece, input.nao-aparece {
   display: none !important;
 }
+.nao-aparece {
+	display: none;
+}
 
 #form-erro span, #form-send span  {
   font-size: 18px;
